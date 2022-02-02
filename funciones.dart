@@ -7,6 +7,7 @@ void main() {
   SaludarSinArgumentos();
   SaludarConArgumentosOpcionales();
   SaludarConArgumentosObligatorios(name, mensaje);
+  SaludarConArgumentosObligatorios(lastName, mensaje);
   SaludarConArgumentosSinOrden(mensaje: mensaje, name: name);
   SaludarConArgumentosNullSafety(lastName, msg);
 }
@@ -21,6 +22,10 @@ void SaludarConArgumentosOpcionales(
 }
 
 void SaludarConArgumentosObligatorios(String name, String mensaje) {
+  print("Obligaotrios: $name $mensaje");
+}
+
+void SaludarConArgumentosrequerida({required String name, required String mensaje}) {
   print("Obligaotrios: $name $mensaje");
 }
 
