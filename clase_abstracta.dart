@@ -13,7 +13,7 @@ void VehicleBrand(Vehicle vehicle) {
 abstract class Vehicle {
   int? wheels;
   String? typeEngine;
-  int? passagers;
+  int? passangers;
   String? brand;
 
   void setBrand();
@@ -22,7 +22,7 @@ abstract class Vehicle {
 class Car implements Vehicle {
   int? wheels;
   String? typeEngine;
-  int? passagers;
+  int? passangers;
   String? brand;
   int? doors;
   
@@ -34,7 +34,7 @@ class Car implements Vehicle {
 class Motorcycle implements Vehicle {
   int? wheels;
   String? typeEngine;
-  int? passagers;
+  int? passangers;
   String? brand;
 
   void setBrand() => print('Honda');
