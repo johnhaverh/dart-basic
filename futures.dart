@@ -14,7 +14,7 @@ Future httpGet(String url) {
 }
 
 //forma 2
-Future httpGets(String url) {
+Future <String> httpGets(String url) {
   return Future.delayed(Duration(seconds: 3), () => 'Hola Mundo - 3 Segundos'
   );
 }
